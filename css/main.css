@@ -1,0 +1,39 @@
+html,body,ul,ol,h1,h2,h3,h4,h5,h6,p,th,td,dl,dt,dd,form,input,textarea,select,.cf{margin:0;padding:0;}
+body{font-size:.12rem; font-family: Helvetica, Microsoft YaHei, Tohoma, Arial;}
+h1,h2,h3,h4,h5,h6,b{font-weight: normal;}
+a{text-decoration:none;outline:none;}
+li{list-style:none}
+img{border:none;vertical-align:middle;}
+/*html{overflow-x:hidden;overflow:-Scroll;overflow-x:hidden}*/
+html,body{height:100%; overflow-y:auto; overflow-x:hidden;}
+/*浮动清理*/
+.cf:before,.cf:after{content:".";display:block;height:0;visibility:hidden}
+.cf:after{clear:both}
+.cf{zoom:1}
+/*公共信息*/
+
+
+/*首屏大图以及logo*/
+.wrap{width: 100%;height:100%; overflow:hidden; background:url(../images/pre_bg_01.jpg) center top no-repeat;
+-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; background-size: cover;position:relative;z-index: 1;}
+/* .logo{ background:url(../images/phone_pre_logo.png) no-repeat;background-size: 100% 100%; width:3.65rem; height:0.71rem;position:absolute; top:.2rem; left:0.05rem; } */
+.phone_xf{position:absolute; bottom:8%; left:50%;margin-left:-1.27rem; width:2.54rem; height:2.57rem;z-index: 10;-webkit-animation:mylogo 3.5s ease infinite;-moz-animation:mylogo 3.5s ease infinite;-ms-animation:mylogo 3.5s ease infinite;-o-animation:mylogo 3.5s ease infinite;animation:mylogo 3.5s ease infinite; }
+.phone_xf img{width:2.54rem; height:2.57rem;}	
+@keyframes mylogo{
+	0%     {transform: translateY(-10%);}
+	50%   {transform: translateY(10%);}
+	100% {transform: translateY(-10%);}
+}
+@-webkit-keyframes mylogo{
+	0%     {transform: translateY(-10%);}
+	50%   {transform: translateY(10%);}
+	100% {transform: translateY(-10%);}
+}	
+
+.phone_text{width:5rem; height:0.6rem; line-height: 0.6rem; text-align: center; position: absolute;top:4.08rem; left:1.18rem;}
+.phone_text p{color:#991111; font-size: 0.36rem;-webkit-user-select:text; font-weight:bold;
+    -moz-user-select:text;
+    -ms-user-select:text;
+    user-select:text;}
+
+
